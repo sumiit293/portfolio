@@ -157,7 +157,7 @@ main {
   display: grid;
   grid-gap: 30px;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-areas: 'bioimage bio bio' 'job1 job2 job3'; }
+  grid-template-areas: 'bioimage bio bio' 'technology technology technology' 'subtech1 subtech2 subtech3' 'subtech4 subtech5 subtech6'; }
   .about-info .bio-image {
     grid-area: bioimage;
     margin: auto;
@@ -166,16 +166,30 @@ main {
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem; }
-  .about-info .job-1 {
-    grid-area: job1; }
-  .about-info .job-2 {
-    grid-area: job2; }
-  .about-info .job-3 {
-    grid-area: job3; }
-  .about-info .job {
-    background: #515151;
-    padding: 0.5rem;
-    border-bottom: #eece1a 5px solid; }
+  .about-info .sm-heading {
+    grid-area: technology; }
+  .about-info .sub-tech1 {
+    grid-area: subtech1; }
+  .about-info .sub-tech2 {
+    grid-area: subtech2; }
+  .about-info .sub-tech3 {
+    grid-area: subtech3; }
+  .about-info .sub-tech4 {
+    grid-area: subtech4; }
+  .about-info .sub-tech5 {
+    grid-area: subtech5; }
+  .about-info .sub-tech6 {
+    grid-area: subtech6; }
+  .about-info .subTech {
+    border: 2px solid #eece1a;
+    padding: 1rem;
+    font-size: 1.2rem;
+    text-align: center; }
+    .about-info .subTech:hover {
+      border: 2px solid white;
+      background: #eece1a;
+      color: #000;
+      transition: all 0.5s  ease-out; }
 
 .project {
   display: grid;
@@ -188,6 +202,9 @@ main {
       opacity: 0.5;
       border: 3px solid #eece1a;
       transition: all 0.5s  ease-out; }
+
+main#about {
+  min-height: calc(100vh - 60px); }
 
 .boxes {
   display: flex;
@@ -267,7 +284,7 @@ main {
       height: 100px;
       width: 100px; }
   .about-info {
-    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
+    grid-template-areas: 'bioimage' 'bio' 'technology' 'subtech1' 'subtech2' 'subtech3' 'subtech4' 'subtech5' 'subtech6';
     grid-template-columns: 1fr; }
   .project {
     grid-template-columns: repeat(2, 1fr); } }

@@ -82,7 +82,9 @@ main {
     grid-template-columns: repeat(3,1fr);
     grid-template-areas:
         'bioimage bio bio'
-        'job1 job2 job3';
+        'technology technology technology'
+        'subtech1 subtech2 subtech3'
+        'subtech4 subtech5 subtech6';
     
         .bio-image {
             grid-area: bioimage;
@@ -94,24 +96,49 @@ main {
             grid-area: bio;
             font-size: 1.5rem;
         }
-        .job-1 {
-            grid-area: job1;
+
+
+        .sm-heading {
+            grid-area:technology;
         }
-        .job-2 {
-            grid-area: job2;
+        .sub-tech1 {
+            grid-area: subtech1;
         }
-        .job-3 {
-            grid-area: job3;
+        .sub-tech2 {
+            grid-area: subtech2;
         }
-        .job {
-         background: lighten($color: $primary-color, $amount: 5);
-         padding: 0.5rem;
-         border-bottom: $secondary-color 5px solid;
+        .sub-tech3 {
+            grid-area: subtech3;
+        }
+        .sub-tech4 {
+            grid-area: subtech4;
+        }
+        .sub-tech5 {
+            grid-area: subtech5;
+        }
+        .sub-tech6 {
+            grid-area: subtech6;
+        }
+        .subTech {
+            border: 2px solid $secondary-color;
+            padding: 1rem;
+           
+            font-size: 1.2rem;
+            text-align: center;
+            &:hover {
+                border: 2px solid white;
+                background: $secondary-color;
+                color: set-text-color($secondary-color);
+                @include easeOut;
+            }
         }
 
 
 }
+
+ 
 // work html
+
 .project {
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -126,9 +153,18 @@ main {
             border: 3px solid $secondary-color;
             @include easeOut;
         }
-    }
+    };
+   
 }
 //contact page
+
+main  {
+
+    &#about {
+        min-height: calc(100vh - 60px);
+    }
+    
+}
 .boxes {
     display: flex;
     flex-wrap: wrap;
