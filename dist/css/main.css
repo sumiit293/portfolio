@@ -160,7 +160,8 @@
     grid-template-areas: 'bioimage bio bio'
    'technology technology technology'
    'subtech1 subtech2 subtech3'
-   'subtech4 subtech5 subtech6'; }
+   'subtech4 subtech5 subtech6'
+   'subtech7 subtech8 subtech9';}
     .about-info .bio-image {
       grid-area: bioimage;
       margin: auto;
@@ -183,6 +184,8 @@
       grid-area: subtech5; }
     .about-info .sub-tech6 {
       grid-area: subtech6; }
+    .abou-info .sub-tech7{
+      grid-area: subtech7;}
     .about-info .subTech {
       border: 2px solid #eece1a;
       padding: 1rem;
