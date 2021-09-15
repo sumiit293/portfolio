@@ -186,6 +186,8 @@
       grid-area: subtech6; }
     .about-info .sub-tech7{
       grid-area: subtech7;}
+    .about-info .sub-tech8{
+      grid-area: subtech8;}
     .about-info .subTech {
       border: 2px solid #eece1a;
       padding: 1rem;
